@@ -1,20 +1,18 @@
 import asyncio
+from colorama import Fore
 import simpleaudio as sa
 
-
-# Función para reproducir el archivo WAV
 def reproducir_musica():
     wave_obj = sa.WaveObject.from_wave_file("DBZ.wav")
     play_obj = wave_obj.play()
     play_obj.wait_done()
 
-# Función para imprimir la letra en la consola
 async def imprimir_letra(letra):
     for linea in letra:
-        print(linea["text"])
+        frase = linea["text"].center(100, "-")
+        print(Fore.GREEN + frase)
         await asyncio.sleep(linea["sleep"])
 
-# Letra de la canción
 letra_cancion = [
     {"sleep":11, "text":"Cha-La Head-Cha-La (versión latino)"},
     {"sleep":6, "text":"El cielo resplandece a mi alrededor (alrededor)"},
@@ -48,7 +46,6 @@ letra_cancion = [
     {"sleep":0, "text":""}
 ]
 
-# Iniciar la reproducción de música y la impresión de letra en paralelo
 async def main():
     await asyncio.gather(
         asyncio.to_thread(reproducir_musica),
