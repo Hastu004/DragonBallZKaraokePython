@@ -1,4 +1,4 @@
-# asyncIO
+# Dragon Ball Z Karaoke
 
 This proyect was created using Python 3.11.6 in MacOs, if you are using another SO please ensure to install correctly ***simpleaudio==1.0.4***
 
