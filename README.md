@@ -7,7 +7,7 @@ This proyect was created using Python 3.11.6 in MacOs, if you are using another 
 python3 -m venv venv
 source venv/bin/activate
 ```
-## Later instal requirements
+## Then install requirements
 ```bash
 pip install -r requirements.txt
 ```
