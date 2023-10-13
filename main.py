@@ -14,7 +14,9 @@ async def imprimir_letra(letra):
         await asyncio.sleep(linea["sleep"])
 
 letra_cancion = [
+    {"sleep":0, "text":""},
     {"sleep":11, "text":"Cha-La Head-Cha-La (versión latino)"},
+    {"sleep":0, "text":""},
     {"sleep":6, "text":"El cielo resplandece a mi alrededor (alrededor)"},
     {"sleep":6, "text":"Al volar, destellos brillan en las nubes sin fin"},
     {"sleep":6, "text":"Con libertad puedes cruzar hoy el cielo azul (el cielo azul)"},
@@ -40,8 +42,8 @@ letra_cancion = [
     {"sleep":3, "text":"Vibrante mi corazón siente emoción"},
     {"sleep":3, "text":"Haré una Genkidama"},
     {"sleep":0, "text":""},
-    {"sleep":4, "text":"Cha-la head-cha-la"},
-    {"sleep":3, "text":"No importa lo que suceda"},
+    {"sleep":2, "text":"Cha-la head-cha-la"},
+    {"sleep":2, "text":"No importa lo que suceda"},
     {"sleep":6, "text":"Sonreiré el día de ho-ho-ho-ho-hoy"},
     {"sleep":0, "text":""}
 ]
